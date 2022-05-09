@@ -4,11 +4,21 @@
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
-    <span for="img" aria-label="money">💲</span>
+    {{! <span for="img" aria-label="money">💲</span> }}
     <span class="dollar-amount">{{post.experience_level}}</span>
 
   </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+  {{#if logged_in}}
+    <p>
+      <textarea
+        class="align-center"
+        name="comment"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button class="btn btn-primary">Leave A Comment</button>
+    </p>
+  {{/if}}
+
 </div>
