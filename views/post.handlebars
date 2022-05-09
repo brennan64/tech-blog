@@ -8,7 +8,17 @@
     <span class="dollar-amount">{{post.experience_level}}</span>
 
   </p>
-  <p>
-    <button class="btn btn-primary">Leave A Comment</button>
-  </p>
+  {{#if logged_in}}
+    <p>
+      <textarea
+        class="align-center"
+        name="comment"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button class="btn btn-primary">Leave A Comment</button>
+    </p>
+  {{/if}}
+
 </div>
