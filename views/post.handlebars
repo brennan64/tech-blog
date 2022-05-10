@@ -9,16 +9,19 @@
 
   </p>
   {{#if logged_in}}
-    <p>
-      <textarea
-        class="align-center"
-        name="comment"
-        id=""
-        cols="30"
-        rows="10"
-      ></textarea>
-      <button class="btn btn-primary">Leave A Comment</button>
-    </p>
+    <div class="comment-area">
+      <form action="submit" class="comment-form">
+        <textarea
+          class="align-center"
+          name="comment"
+          id="comment"
+          placeholder="Add A Comment Here..."
+          cols="150"
+          rows="10"
+        ></textarea>
+        <button class="btn btn-primary">post</button>
+      </form>
+    </div>
   {{/if}}
 
 </div>
