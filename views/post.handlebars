@@ -10,16 +10,14 @@
   </p>
   {{#if logged_in}}
     <div class="comment-area">
-      <form action="submit" class="comment-form">
-        <textarea
-          class="align-center"
-          name="comment"
-          id="comment"
-          placeholder="Add A Comment Here..."
-          cols="150"
-          rows="10"
-        ></textarea>
-        <button class="btn btn-primary">post</button>
+      <form class="form" id="comment-form">
+        <div class="form-group">
+          <label for="gamename-input">Add Comment</label>
+          <input class="form-input" type="text" id="comment" />
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
       </form>
     </div>
   {{/if}}
