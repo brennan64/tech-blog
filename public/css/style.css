@@ -6,7 +6,7 @@ header,
 .no-button {
   background: none;
   border: none;
-  padding: 0;
+  padding: 10%;
   cursor: pointer;
   color: #1b89bc;
   text-decoration: none;
